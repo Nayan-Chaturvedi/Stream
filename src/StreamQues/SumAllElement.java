@@ -19,4 +19,4 @@ public class SumAllElement
 
 // Second Highest Salary Using Stream
 
-employees.stream().sorted().(Comparator.comparingDouble(Employees :: getSalary).reversed()).skip(1).findFirst()
+employees.stream().sorted()(Comparator.comparingDouble(Employees :: getSalary).reversed()).skip(1).findFirst()
