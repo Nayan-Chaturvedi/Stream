@@ -17,3 +17,17 @@ public class MaximumNumber {
 //		Max return optional go we use get
 	}
 }
+
+// Minimum Number Finder
+
+import java.util.List;
+import java.util.Arrays;
+import java.util.stream.Collectors;
+import java.util.Comparator;
+
+class MinimumNumber {
+    public static void main(String[] args) {
+        List<Integer> al=Arrays.asList(1, 2, 3, 4, 5, 6);
+        System.out.println(al.stream().min(Integer::compare).orElseThrow());
+    }
+}
