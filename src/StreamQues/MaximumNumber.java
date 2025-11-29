@@ -9,12 +9,10 @@ public class MaximumNumber {
 	public static void main(String[] args) {
 		List<Integer> nums=Arrays.asList(1, 2, 3, 4, 5);
 		
-		int max= nums.stream().max(Comparator.naturalOrder()).get();
+		List<Integer> list = List.of(10,20,5,40);
+		int max = list.stream().max(Integer::compare).orElseThrow();
 		System.out.println(max);
-		
-//		In max we use comparater - to compare all the value of list
-//		naturalOrder- Is a static method that commpare in asc order
-//		Max return optional go we use get
+
 	}
 }
 
@@ -31,3 +29,6 @@ class MinimumNumber {
         System.out.println(al.stream().min(Integer::compare).orElseThrow());
     }
 }
+
+// Sort List Using Stream
+List<Integer> sorted = list.stream().sorted().toList();
