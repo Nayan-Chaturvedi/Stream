@@ -31,7 +31,7 @@ class MinimumNumber {
 }
 
 // Sort List Using Stream
-List<Integer> sorted = list.stream().sorted().toList();
+List<Integer> sorted = list.stream().sorted();
 
 // Sort List in reversed Order
 		al.stream().sorted(Comparator.reverseOrder()).forEach(System.out::println);
